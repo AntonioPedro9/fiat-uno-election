@@ -1,6 +1,6 @@
 let chart;
 
-function renderUnos() {
+window.onload = function renderUnos() {
 	api.get("unos").then((response) => {
 		let unos = response.data;
 
@@ -16,11 +16,10 @@ function renderUnos() {
 				<button class="theme-deep-purple" onclick="handleVotes(${unos[i].id})">Votar</button>
 			`;
 			
-			document.getElementById("unos-container").appendChild(div);
+			document.getElementById("container").appendChild(div);
 		}
 	});
 }
-renderUnos();
 
 function renderChart() {
 	api.get("unos").then((response) => {

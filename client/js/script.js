@@ -18,7 +18,7 @@ function renderUnos(response) {
 		div.innerHTML = `
 			<img src="./img/uno_${unos[i].name.toLowerCase()}.png">
 			<h6>Uno ${unos[i].name}</h6>
-			<p>Bla bla bla bla</p>
+			<p>${unos[i].description}</p>
 			<button class="theme-pink" onclick="handleVotes(${unos[i].id})">Votar</button>
 		`;
 		document.getElementById("container").appendChild(div);

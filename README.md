@@ -15,6 +15,13 @@ Dentro da pasta "server" rode os seguintes comandos no termial:
 ```
 
 ## Iniciando o servidor
+No arquivo "api.js" altere a URL para "http://localhost:3000"
+```
+const api = axios.create({
+	baseURL: "http://localhost:3000",
+});
+
+```
 
 Dentro da pasta "server" rode o seguinte comando no termial:
 ```
